@@ -12,6 +12,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="{{$img}}" alt="Bootstrap" width="30" height="24">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
@@ -33,6 +34,7 @@
     <main class="container pt-3">
         <div class="row text-center">
             <h1>Home</h1>
+            <p>{{$saluto}}</p>
         </div>
     </main>
     

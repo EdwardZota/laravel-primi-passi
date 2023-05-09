@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $data = [
-        'saluto' => 'Hello World!'
+        'saluto' => 'Hello World!',
+        'img' =>'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
     ];
 
     return view('home', $data);
