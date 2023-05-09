@@ -25,13 +25,25 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('faq', function () {
-    return view('faq');
+
+    $data = [
+        'img' =>'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
+    ];
+    return view('faq', $data);
 })->name('faq');
 
 Route::get('setting', function () {
-    return view('setting');
+
+    $data = [
+        'img' =>'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
+    ];
+    return view('setting', $data);
 })->name('setting');
 
 Route::get('support', function () {
-    return view('support');
+
+    $data = [
+        'img' =>'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
+    ];
+    return view('support', $data);
 })->name('support');
